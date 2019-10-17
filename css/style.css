@@ -1,0 +1,503 @@
+			@charset "utf-8";
+		/* CSS Document */
+		
+		* {
+			padding: 0;
+			margin: 0;
+		}
+		
+		::-webkit-scrollbar {
+			display: none;
+		}
+		
+		a {
+			color: #fff;
+			font-size: 2.0vw;
+			text-decoration: none;
+		}
+		
+		a:hover {
+			cursor: pointer;
+		}
+		
+		.name {
+			position: absolute;
+			left: 50%;
+		}
+		
+		img {}
+		
+		body {
+			padding: 0;
+			margin: 0;
+			font-family: 'Work Sans', sans-serif;
+			text-align: center;
+			height: 400vh;
+			overflow-x:hidden;
+		}
+		
+		hr {
+			height: 0.2vh;
+			background-color: #FFF;
+			margin: auto;
+			display: inline-block;
+			width: 100%;
+			border:none;
+			border-top:#FFF 1.5px solid;
+		}
+		
+		.logo-hr {
+			height: 0.069vh;
+			background-color: #FFF;
+			display: inline-block;
+			width: 80%;
+			margin-bottom:5px;
+			margin-right: 20%;
+		}
+		
+		h1 {
+			font-size: 12vw;
+			font-weight: 200;
+			color: #FFF;
+			font-family: 'Work Sans', sans-serif;
+		}
+		
+		h2 {
+			font-size: 3.4vh;
+			font-weight: 300;
+			color: #FFF;
+			font-family: 'Work Sans', sans-serif;
+		}
+		
+		h3 {
+			display: block;
+			font-size: 4.1vw;
+			font-weight: 200;
+			color: #FFF;
+			text-align: center;
+			font-family: 'Work Sans', sans-serif;
+		}
+		
+		h4 {
+			font-size: 2vw;
+			color: #FFF;
+			text-align: center;
+			font-weight: 300;
+			font-family: 'Work Sans', sans-serif;
+		}
+		
+		p {
+			font-size: 1.6vw;
+			color: #FFFFFF;
+			font-weight: 100;
+			font-family: 'Work Sans', sans-serif;
+		}
+		
+		iframe,
+		object,
+		embed {
+			max-width: 100%;
+		}
+		
+		.burger {
+			display: block;
+			float: right;
+			width: 15vw;
+            height: auto;
+			cursor: pointer;
+			position: fixed;
+			right: 0;
+			visibility: hidden;
+		}
+		
+		.burger-icon {
+			width: 100%;
+			height: auto;
+		}
+		
+		.resp-nav {
+			display: block;
+			display: none;
+			visibility: hidden;
+			width: 50%;
+			height: auto;
+			background-color: rgba(181, 43, 218, 0.7);
+			z-index: 50;
+			position: fixed;
+			top: 10vh;
+			right: 0;
+		}
+		
+		.resp-home {
+			display: block;
+			width: 100%;
+			height: auto;
+			text-align: center;
+			color: #fff;
+			font-size: 13vw;
+			text-decoration: none;
+			float: right;
+		}
+		
+		.resp-about,
+		.resp-music,
+		.resp-contact {
+			display: block;
+			width: 100%;
+			height: auto;
+			text-align: center;
+			padding-top: 20px;
+			color: #fff;
+			font-size: 13vw;
+			text-decoration: none;
+			float: right;
+		}
+		
+		.logo-cold {
+			letter-spacing: 0.5em;
+			margin-right: 0.5em;
+			width: auto;
+		}
+		
+		.logo-heat {
+			letter-spacing: 0.58em;
+			margin-right: 0.58em;
+			width: auto;
+		}
+		
+		.splash-cold {
+			letter-spacing: 0.5em;
+			width: auto;
+			overflow-y: hidden;
+		}
+		
+		.splash-heat {
+			letter-spacing: 0.58em;
+			width: auto;
+			overflow-y: hidden;
+		}
+		
+		#splash {
+			background-image: url(../img/splash-bg.jpg);
+			width: 100%;
+			height: 100vh;
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+			background-position: center center;
+		}
+		
+		#splash-title {
+			padding-top: 20vh;
+			display: inline-block;
+			margin-left: auto;
+			margin-right: auto;
+			width: auto;
+			height: auto;
+			overflow: auto;
+			overflow-y: hidden;
+		}
+		
+		#social {
+			position: fixed;
+			bottom: 0;
+			left: 0;
+			width: 5%;
+			float: left;
+		}
+		
+		.icons {}
+		
+		#logo-title {
+			position: fixed;
+			left: 50;
+			top: 0;
+			display: none;
+			width: auto;
+			height: auto;
+			overflow: auto;
+		}
+		
+		#logo-title:hover {
+			cursor: pointer;
+		}
+		
+		nav {}
+		
+		ul {
+			position: fixed;
+			top: 0;
+			right: 0;
+			color: #fff;
+		}
+		
+		li {
+			display: inline;
+			margin-left: 50px;
+			color: #fff;
+			font-weight: 300;
+		}
+		
+		#about {
+			background-image: url(../img/about-bg.jpg);
+			width: 100%;
+			height: 100vh;
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+			background-position: center center;
+		}
+		
+		.about-split {
+			padding-top: 12%;
+			width: 80%;
+			height: 30%;
+			margin-right: auto;
+			margin-left: auto;
+		}
+		
+		.about-split-2 {
+			height: auto;
+			width: 80%;
+			margin-right: auto;
+			margin-left: auto;
+			overflow: hidden;
+		}
+		
+		.member-img {
+			padding-top: 3%;
+			float: left;
+			margin-left: 3%;
+		}
+		
+		.member-img-left {
+			padding-top: 3%;
+			float: left;
+		}
+		
+		.member-img-right {
+			padding-top: 3%;
+			float: left;
+		}
+		
+		#music {
+			background-image: url(../img/music-bg.jpg);
+			width: 100%;
+			height: 100vh;
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+			background-position: center center;
+		}
+		
+		#soundcloud{
+			width:100%;
+			height:100%;
+		}
+		
+		.music-content,
+		.event-content {
+			width: 50%;
+			float: left;
+			height: 90%;
+			padding-top: 5%;
+		}
+		
+		.music-content-box,
+		.event-content-box {
+			margin-left: auto;
+			margin-right: auto;
+			width: 70%;
+			height: 80%;
+			padding-top: 3%;
+		}
+		
+		#contact {
+			background-image: url(../img/contact-bg.jpg);
+			width: 100%;
+			height: 100vh;
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+			background-position: center center;
+		}
+		
+		.contact-split {
+			margin-left: auto;
+			margin-right: auto;
+			padding-top: 10%;
+			width: 80%;
+			height: 10vh;
+		}
+		
+		.contact-split-2 {
+			margin-left: auto;
+			margin-right: auto;
+			padding-top: 5%;
+			width: 80%;
+			height: 50vh;
+		}
+		
+		input[type=text],
+		select {
+			width: 30%;
+			height: 30px;
+			float: left;
+			margin-left: 3%;
+			border: 1px solid #535353;
+			background-color: #535353;
+			border-radius: 4px;
+			box-sizing: border-box;
+			font-family: 'Work Sans', sans-serif;
+			color: #FFF;
+            font-weight: 300;
+		}
+		
+		::-webkit-input-placeholder {
+			font-size: 20px;
+			color: #FFF;
+            font-weight: 300;
+		}
+		
+		textarea {
+			margin-left: 2%;
+			margin-right: auto;
+			margin-top: 2%;
+			width: 95%;
+			border: 1px solid #535353;
+			background-color: #535353;
+			border-radius: 4px;
+			font-size: 20px;
+			color: #FFF;
+			font-family: 'Work Sans', sans-serif;
+            font-weight: 300;
+		}
+		
+		textarea:focus,
+		input:focus {
+			font-size: 20px;
+			color: #FFF;
+            font-weight: 300;
+		}
+		
+		input[type=submit],
+		input[type=reset] {
+            font-weight: 300;
+			background-color: #fff;
+			font-size: 15px;
+			color: #535353;
+			border: none;
+			padding: 16px 32px;
+			text-decoration: none;
+			margin: 4px 2px;
+			border-radius: 4px;
+			cursor: pointer;
+		}
+		
+		#credit {
+			width: auto;
+			margin-left: auto;
+			margin-right: auto;
+			margin-top: 5vh;
+		}
+		
+		@media (max-width:768px) {
+			p {
+				font-size: 2.5vh;
+			}
+			.burger {
+				display: block;
+				visibility: visible;
+			}
+			.resp-nav {
+				display: block;
+				visibility: visible;
+			}
+			nav {
+				display: none;
+				visibility: hidden;
+			}
+			a {
+				font-size: 3vw;
+			}
+			#splash-title {
+				margin: auto;
+			}
+			#credit {
+				margin-top: 20vh;
+			}
+			.contact-split {
+				padding-top: 15%;
+			}
+		}
+		
+		@media (max-width:750px) {
+			#splash {
+				background-attachment: scroll
+			}
+			#about {
+				background-attachment: scroll
+			}
+			#music {
+				background-attachment: scroll
+			}
+			#contact {
+				background-attachment: scroll
+			}
+			h4 {
+				font-size: 3vh;
+				width: auto;
+			}
+			.about-split {
+				padding-top: 35vh;
+			}
+			.about-split-2 {
+				display: none;
+				visibility: hidden;
+			}
+		}
+		
+		@media (max-width:480px) {
+			.music-content-box,
+			.music-content {
+				display: none;
+				visibility: hidden;
+			}
+			.event-content {
+				padding-top: 20vh;
+				width: 100vw;
+				margin-left: auto;
+				margin-right: auto;
+			}
+			.event-content-box {
+				width: 50%;
+				margin-left: auto;
+				margin-right: auto;
+			}
+            
+            ::-webkit-input-placeholder {
+			     font-size: 11px;
+                font-family: 'Work Sans', sans-serif;
+                    font-weight: 300;
+                } 
+                
+                textarea:focus,
+		      input:focus {
+                  font-size: 11px;
+                  font-family: 'Work Sans', sans-serif;
+                  font-weight: 300;
+                }
+            
+            .contact-split-2{
+                padding-top: 7%;
+            }
+		
+}
